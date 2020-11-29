@@ -9,7 +9,7 @@ local CppTestJob(name) = {
     ['test-' + lang + '-' + name + '-exercism']: {
       script: [
         'cd ' + name,
-        'mdkir build',
+        'mkdir build',
         'cd build',
         'cmake -G "Unix Makefiles" ..',
         'make'
